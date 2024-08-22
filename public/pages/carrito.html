@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Aieka Jewish Teen Center</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/carrito.html">Carrito (<span id="carritoCount">0</span>)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <h2 class="text-center">Carrito</h2>
+        <div id="carrito" class="row">
+            <!-- Carrito generado por JavaScript -->
+        </div>
+        <div id="totalCuentaDiv" class="my-3">
+            <h3>Total de la Cuenta</h3>
+            <p id="totalCuenta" class="font-weight-bold">$0</p>
+        </div>
+        <button id="vaciarCarritoBtn" class="btn btn-danger btn-block">Vaciar Carrito</button>
+        <div id="propinaSection" class="my-3">
+            <input type="number" id="porcentajePropina" class="form-control mb-2" placeholder="Porcentaje de propina" min="0" max="100">
+            <button id="calcularPropinaBtn" class="btn btn-primary btn-block">Calcular Propina</button>
+        </div>
+        <div id="resultadoPropina" class="alert alert-info mt-3" style="display: none;"></div>
+        <button id="finalizarCompraBtn" class="btn btn-success btn-block mt-4">Finalizar Compra</button>
+        <div id="notificacionCompra" class="alert alert-success mt-3" style="display: none;">Compra realizada correctamente.</div>
+        <div id="resumenCompra" class="alert alert-info mt-3" style="display: none;">
+            <h4>Resumen de la Compra:</h4>
+            <p id="resumenDetalles"></p>
+        </div>
+        <div id="mensajeError" class="alert alert-danger mt-3" style="display: none;">El carrito está vacío. Agrega productos antes de finalizar la compra.</div>
+    </div>
+    <footer class="container-fluid bg-dark text-white text-center p-3 mt-5">
+        <div>
+            <h5>Síguenos en Redes Sociales</h5>
+            <a href="https://facebook.com" class="text-white mx-2" target="_blank">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://twitter.com" class="text-white mx-2" target="_blank">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="https://instagram.com" class="text-white mx-2" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+        <div class="mt-2">
+            <p>&copy; 2024 Aieka Jewish Teen Center. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="../js/funciones.js"></script>
+</body>
+</html>
